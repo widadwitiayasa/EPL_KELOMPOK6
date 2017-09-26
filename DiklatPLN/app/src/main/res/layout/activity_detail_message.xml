@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.diklat.pln.app.Inbox.ListMessage.DetailMessage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/detail_message_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@color/buttonPrimary" />
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/detail_message_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pegawai A" />
+                    <TextView
+                        android:id="@+id/detail_message_waktupengajuan"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terkirim:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/detail_message_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10-03-16"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:id="@+id/detail_message_clocklay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/detail_message_clock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="13.10"/>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" WIB"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/detail_message_tglhidetv"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terkirim :"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail_message_tglhide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XX"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/detail_message_waktuhidetv"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu Ijin Diajukan :"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:id="@+id/detail_message_waktuhidelay"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/detail_message_waktuhide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XX"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" WIB" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detail_content_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Ijin :"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/detail_message_datefrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XX MM YY" />
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s/d"/>
+                    <TextView
+                        android:id="@+id/detail_message_dateto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XX MM YY"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terhitung :"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/detail_message_terhitung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XX" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/detail_message_jamtelattv"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jam Kedatangan Sebenarnya :"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+                <LinearLayout
+                    android:id="@+id/detail_message_jamtelatlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/detail_message_jamtelat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XX" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" WIB" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diajukan Tanggal :"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/detail_message_diajukantgl"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dikonfirmasi Tanggal :"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/detail_message_dikonfirmasitgl"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subjek Ijin :"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/detail_message_subjek"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuti Liburan"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status ijin :"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/detail_message_status"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum di konfirmasi"/>
+                <TextView
+                    android:id="@+id/detail_message_siapaijintv"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dikonfirmasi Oleh :"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/detail_message_siapaijin"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum di konfirmasi"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Keterangan : "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detail_message_notes"
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pak saya minta ijin karena lorem Ipsum semelevo-semelevo"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/detail_msg_accrjtlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/detail_message_acceptbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:textColor="@color/pure_white"
+                android:background="@drawable/acc_btn"/>
+            <Button
+                android:id="@+id/detail_message_rejectbtn"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:textColor="@color/pure_white"
+                android:background="@drawable/rjt_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.diklat.pln.app.SubordinatePage">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/list_subordinate_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+            <EditText
+                android:id="@+id/search_subordinate"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="search here"
+                android:textSize="13sp"
+                android:layout_gravity="end" />
+
+            <Spinner
+                android:id="@+id/spinner_bawahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown">
+
+            </Spinner>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_subordinate_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </android.support.v7.widget.RecyclerView>
+            <Button
+                android:id="@+id/list_subordinate_magangbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="List Pegawai Lainnya"
+                style="@style/myButton"/>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

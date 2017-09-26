@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="PlnTosca">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppCompat.NoActionBar" parent="AppTheme" />
+
+    <style name="PlnTosca" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">@color/black_guideline</item>
+        <item name="android:colorBackground">@color/background_material_light_1</item>
+        <item name="android:textColorPrimaryInverse">@android:color/darker_gray</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="android:textColorSecondaryInverse">@android:color/holo_blue_bright</item>
+        <item name="android:windowBackground">@color/background_material_light_2</item>
+        <item name="android:textColor">@color/black_guideline</item>
+        <item name="colorAccent">@color/black_guideline</item>
+        <item name="android:colorForeground">@android:color/darker_gray</item>
+        <item name="android:buttonStyle">@style/myButton</item>
+    </style>
+    <style name="myButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/gradient_color_bg</item>
+        <item name="android:textColor">@color/pure_white</item>
+    </style>
+    <style name="mySecondButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/red_color_bg</item>
+        <item name="android:textColor">@color/pure_white</item>
+    </style>
+
+
+    <style name="myActivityStyle" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/pure_white</item>
+        <item name="android:textColor">@color/black_guideline</item>
+        <item name="android:editTextColor">@color/black_guideline</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+    </style>
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/buttonPrimary</item>
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:colorAccent">@color/buttonPrimary</item>
+    </style>
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/buttonPrimary</item>
+        <item name="android:calendarTextColor">@color/black_guideline</item>
+        <item name="android:dayOfWeekBackground">@color/black_guideline</item>
+        <item name="android:yearListSelectorColor">@color/black_guideline</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:minDate">01/01/2000</item>
+    </style>
+
+
+
+</resources>

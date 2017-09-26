@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MARS</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="error_local">Terjadi kesalahan pada jaringan, silakan ganti koneksi ke jaringan Luar PLN</string>
+    <string name="error_public">Terjadi kesalahan pada jaringan, silakan ganti koneksi ke jaringan PLN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="bulan">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </array>
+    <array name="subjek_cuti">
+        <item>- - -Pilih jenis cuti- - -</item>
+    </array>
+    <array name="tahunkoe">
+        <item>Tahun</item>
+    </array>
+</resources>

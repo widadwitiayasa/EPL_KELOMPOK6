@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen >
+<tabs>
+    <tab
+        id="@+id/kotak_kirim"
+        icon="@drawable/ic_reply_black_24dp"
+        title="Kotak Keluar" />
+    <!--<tab-->
+        <!--id="@+id/kotak_masuk" />-->
+    <tab
+        id="@+id/ajukan_ijin"
+        icon="@drawable/ic_send_black_24dp"
+        title="Ajukan Ijin" />
+</tabs>
+</PreferenceScreen>

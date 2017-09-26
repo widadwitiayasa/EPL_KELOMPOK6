@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="kotak_masuk" type="id" />
+    <item name="kotak_keluar" type="id" />
+    <item name="ajukan_ijin" type="id" />
+    <item name="kotak_kirim" type="id"/>
+</resources>

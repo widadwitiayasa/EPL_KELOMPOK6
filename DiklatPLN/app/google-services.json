@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "280464055814",
+    "firebase_url": "https://web-pln.firebaseio.com",
+    "project_id": "web-pln",
+    "storage_bucket": "web-pln.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280464055814:android:e77292905b2c9b61",
+        "android_client_info": {
+          "package_name": "dharmawan.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280464055814-1v5s7crj5uapcdfctra2dgnr13ij3qd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dharmawan.myapplication",
+            "certificate_hash": "5d6fd85084c85650b43e09031991e8b2f02d0bac"
+          }
+        },
+        {
+          "client_id": "280464055814-ujalqc1d35f5johef58bo6tp1rc1ogst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOp5eq5uyrXluasUV60hOhLrc-yYo5Hhk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280464055814-ujalqc1d35f5johef58bo6tp1rc1ogst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280464055814:android:64090e185523df3e",
+        "android_client_info": {
+          "package_name": "com.diklat.pln.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280464055814-21tvsp9mcllka8v1ddepqt46jdbvjaed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.diklat.pln.app",
+            "certificate_hash": "397bfa0875b09b67702616ea0d71e0b4b9beeafb"
+          }
+        },
+        {
+          "client_id": "280464055814-ujalqc1d35f5johef58bo6tp1rc1ogst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOp5eq5uyrXluasUV60hOhLrc-yYo5Hhk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280464055814-ujalqc1d35f5johef58bo6tp1rc1ogst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.diklat.pln.app.MenuActivity">
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ip_public"
+            android:orderInCategory="100"
+            android:title="Jaringan Luar PLN" />
+        <item
+            android:id="@+id/ip_local"
+            android:title="Jaringan PLN"/>
+    </group>
+
+
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:title="Ip Local"-->
+                <!--android:id="@+id/ip_local"-->
+                <!--app:showAsAction="ifRoom" />-->
+            <!--<item-->
+                <!--android:title="Ip Public"-->
+                <!--android:id="@+id/ip_public"-->
+                <!--app:showAsAction="ifRoom"/>-->
+        <!--</menu>-->
+        <!--</item>-->
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.diklat.pln.app.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="80dp"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="#000"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="username"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="password"/>
+
+    <RadioGroup
+        android:id="@+id/login_connection_rg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:text="Jaringan PLN"
+            android:checked="false"
+            android:textAlignment="center"
+            android:textColor="@drawable/text_color_selector"/>
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Jaringan Luar PLN"
+            android:checked="true"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:textAlignment="center"
+            android:textColor="@drawable/text_color_selector"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/primary_button_margin"
+        android:text="Login"
+        style="@style/myButton"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_pln"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+
+</LinearLayout>

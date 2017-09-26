@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="PlnTosca" parent="Theme.AppCompat.Light.NoActionBar">
+                <item name="android:colorBackground">@color/background_material_light_1</item>
+                <item name="android:colorForeground">@android:color/darker_gray</item>
+                <item name="android:textColorPrimary">@color/black_guideline</item>
+                <item name="android:textColorPrimaryInverse">@android:color/darker_gray</item>
+                <item name="android:textColorSecondary">@android:color/darker_gray</item>
+                <item name="android:textColorSecondaryInverse">@android:color/holo_blue_bright
+                </item>
+                <item name="android:windowBackground">@color/background_material_light_2</item>
+                <item name="android:textColor">@color/black_guideline</item>
+                <item name="android:titleTextColor">@color/black_guideline</item>
+                <item name="colorAccent">@color/black_guideline</item>
+                <item name="android:navigationBarColor">@android:color/black</item>
+        </style>
+
+
+</resources>

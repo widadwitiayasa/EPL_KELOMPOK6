@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diklat.pln.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.diklat.pln.app.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diklat.pln.app.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diklat.pln.app.TabbedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diklat.pln.app.Profile.PresenceList.PresenceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Profile.AturProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Inbox.LeavePermissionForm"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Inbox.ListMessage.DetailMessage"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Subordinate.DetailSubordinate"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Inbox.OutBoxFragment"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Inbox.ListMessage.ActivityPerijinan"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+        <activity
+            android:name="com.diklat.pln.app.Subordinate.ListSubordinate.ListMagang"
+            android:screenOrientation="portrait"
+            android:theme="@style/myActivityStyle" />
+
+        <!--<receiver android:name=".AlarmReceiverLifeLog" />-->
+
+        <receiver android:name="com.diklat.pln.app.AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.diklat.pln.app.NotificationServices"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7d5e2110bfa0aa7110b43d41f783752677207910" />
+
+        <activity android:name="com.diklat.pln.app.BaseActivity"/>
+    </application>
+
+</manifest>
